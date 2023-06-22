@@ -21,7 +21,7 @@ public class LoanDetailsRepo {
 
     private final String insertSQL = "insert into loan_details values (null, ?, ?)";
 
-    public Integer createLoanDetais(LoanDetails loanDetails) {
+    public Integer createLoanDetails(LoanDetails loanDetails) {
         KeyHolder generateKey = new GeneratedKeyHolder();
 
         PreparedStatementCreator psc = new PreparedStatementCreator() {
