@@ -38,6 +38,7 @@ public class LoanRepo {
                 PreparedStatement ps = con.prepareStatement(insertSQL, new String[] {"id"});
                 ps.setInt(1, loan.getCustomerId());
                 ps.setDate(2, loan.getLoanDate());
+                ps.setDate(3, loan.getReturnDate());
                 return ps;
             }
             
