@@ -94,7 +94,7 @@ public class CustomerRepo {
 
         };
 
-        jdbcTemplate.update(null, generatedKey);
+        jdbcTemplate.update(psc, generatedKey);
 
         Integer createdCustomerId = generatedKey.getKey().intValue();
         return createdCustomerId;
